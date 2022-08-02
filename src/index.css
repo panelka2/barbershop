@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: "Sverdlovsk";
+    src: local("Sverdlovsk"),
+    url('/src/font/Sverdlovsk.ttf') format("truetype");
 }
+body {
+    color:white;
+    background-color:black;
+    margin:0;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+body, html {
+    font-family: "Sverdlovsk";
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #fff;
 }

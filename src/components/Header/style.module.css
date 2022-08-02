@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+.buttons {
+    margin-top: 20px;
+    padding: 20px 30px;
+    text-decoration: none;
+    background-color: transparent;
+    color:white
+}
+.buttons:hover {
+    background-color: white;
+    color:black;
+}
+.logo {
+    margin-top: 6px;
+    height: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: auto;
+}
+.odd {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+.butt_block {
+    height: 82px;
+    display: flex;
+    justify-content: center;
+}
+.left_butt {
+    margin-left: 63px;
+}
+.booking {
+    margin-top: 20px;
+    padding: 20px 30px;
+    text-decoration: none;
+    background-color: white;
+    color:black;
+}
+.icons {
+    width: 50px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 10px;
+}

@@ -2,7 +2,7 @@ import React from 'react';
 import s from './style.module.css'
 import classNames from "classnames";
 
-const Price = () => {
+export const Price = () => {
     return (
         <>
         <div className={s.main_block}>
@@ -51,13 +51,7 @@ const Price = () => {
                 </div>
             </div>
         </div>
-            <div className={s.hr_block}>
-                <div className={s.hr_width}>
-                    <hr/>
-                </div>
-            </div>
+        <hr className={s.hr_width}/>
         </>
     );
 };
-
-export default Price;

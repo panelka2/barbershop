@@ -1,11 +1,17 @@
 import React from 'react';
+import {Header} from "../Header";
+import {Contacts} from "../Contacts";
 
-const Layout = () => {
+interface ILayout {
+    children: React.ReactNode;
+}
+
+export const Layout = ({children}: ILayout): React.ReactElement => {
     return (
-        <div>
-            Layout
-        </div>
+        <>
+            <Header/>
+                <main>{children}</main>
+            <Contacts/>
+        </>
     );
 };
-
-export default Layout;

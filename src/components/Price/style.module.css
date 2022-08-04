@@ -43,13 +43,9 @@ hr {
     align-items: center;
 }
 .first_span {
-    margin-bottom: 10px;
-}
-.hr_block {
-    display: flex;
-    justify-content: center;
-    margin-top: 48px;
+    margin-bottom: 14px;
 }
 .hr_width {
     width: 1060px;
+    margin-top: 48px;
 }

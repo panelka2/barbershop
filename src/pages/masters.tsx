@@ -1,11 +1,9 @@
 import React from 'react';
 
-const masters = () => {
+export const Masters = () => {
     return (
         <div>
-            <p><span>Наши мастера</span></p>
+            Masters
         </div>
     );
 };
-
-export default masters;

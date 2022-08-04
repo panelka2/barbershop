@@ -1,0 +1,51 @@
+.block_contacts {
+    margin-top: 40px;
+}
+.block_txt {
+    text-align: center;
+}
+.contacts {
+    font-size: 35px;
+}
+.description {
+    margin-top: 10px;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.icons {
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.hr_style {
+    width: 1060px;
+    margin-top: 15px;
+}
+.navi_footer {
+    display: flex;
+    justify-content: center;
+    margin: 27px 0px;
+}
+.butt {
+    margin: 0px 30px;
+    height: 150px;
+    font-size: 25px;
+    color:white;
+    text-decoration: none;
+}
+.butt:hover {
+    text-decoration: underline white;
+}
+.link {
+    background-color: white;
+    color:black;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 4px;
+    margin-top: 0px;
+}
+.link:hover {
+    text-decoration: underline black;
+}

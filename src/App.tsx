@@ -6,6 +6,7 @@ import {Masters} from "./pages/masters";
 import {Layout} from "./components/Layout";
 import {About} from "./pages/about";
 import {News} from "./pages/news"
+import {Page404} from "./pages/Page404";
 
 export const routes = {
     home: "/",
@@ -22,6 +23,7 @@ export default function App() {
                     <Route path={routes.masters} element={<Masters/>} />
                     <Route path={routes.about} element={<About/>}/>
                     <Route path={routes.news} element={<News/>}/>
+                    <Route path="*" element={<Page404/>}/>
                 </Routes>
             </Layout>
         </>

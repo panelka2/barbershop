@@ -6,6 +6,9 @@
 .img {
     width: 1115px;
 }
+.img_mobile {
+    width: 100%;
+}
 .block_img {
     display: flex;
     justify-content: center;
@@ -88,4 +91,17 @@
 .review_block {
     display: flex;
     justify-content: center;
+}
+
+/* пока большой */
+@media (min-width: 1091px) {
+    .img_mobile {
+        display: none;
+    }
+}
+/* стал меньше */
+@media (max-width: 1090px) {
+    .img {
+        display: none;
+    }
 }

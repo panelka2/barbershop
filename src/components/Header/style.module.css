@@ -46,3 +46,13 @@
     margin-top: 25px;
     margin-left: 10px;
 }
+
+/* стал меньше */
+@media (max-width: 1090px) {
+    .butt_block {
+        display: none;
+    }
+    .header {
+        justify-content: unset;
+    }
+}

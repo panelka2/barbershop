@@ -49,3 +49,23 @@ hr {
     width: 1060px;
     margin-top: 48px;
 }
+/* стал меньше */
+@media (max-width: 1090px) {
+    .hr_width {
+        width: unset;
+    }
+    .text_title {
+        width: 100%;
+        padding: 0 14px;
+    }
+    .prices p{
+        padding: 0px 14px;
+    }
+    .last_text {
+        width: 96%;
+        margin: 0 10px;
+    }
+    .last_text p span {
+        width: 85%;
+    }
+}

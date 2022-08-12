@@ -3,6 +3,7 @@ import s from './style.module.css'
 import classNames from "classnames";
 import {Link} from "react-router-dom";
 import {routes} from '../../App'
+import MobileHeader from "../MobileHeader";
 
 const logo = require('../../assets/logo.png')
 const vk = require('../../assets/vk.png')
@@ -13,23 +14,24 @@ export const Header = () => {
         <>
             <header className={s.header}>
                 <div className={s.butt_block}>
-
                     <Link className={classNames(s.odd, s.buttons, s.left_butt)} to={routes.home}>
                         Главная
                     </Link>
-                    <Link className={classNames(s.even, s.buttons)} to='/masters'>
+                    <Link className={classNames(s.even, s.buttons)} to={routes.masters}>
                         Мастера
                     </Link>
-                    <Link className={classNames(s.odd, s.buttons)} to='/about'>
+                    <Link className={classNames(s.odd, s.buttons)} to={routes.about}>
                         О нас
                     </Link>
-                    <div className={s.butt_block}>
-                        <img className={s.logo} src={logo}/>
-                    </div>
-                    <a className={classNames(s.odd, s.buttons)}>
+                    <Link to={routes.home}>
+                        <div className={s.butt_block}>
+                            <img className={s.logo} src={logo}/>
+                        </div>
+                    </Link>
+                    <Link  className={classNames(s.odd, s.buttons)} to={routes.news}>
                         Новости
-                    </a>
-                    <a className={classNames(s.booking)}>
+                    </Link>
+                    <a href="https://n390381.yclients.com/" className={classNames(s.booking)}>
                         Запись онлайн
                     </a>
                     <a href="https://vk.com/gqbarbershop">
@@ -39,9 +41,8 @@ export const Header = () => {
                         <img src={inst} className={s.icons}/>
                     </a>
                 </div>
+                <MobileHeader />
             </header>
-
         </>
-
     );
 };

@@ -14,11 +14,33 @@ import "./style.css"
 const desktop_1 = require('../../assets/slider/desktop_1.jpg');
 const desktop_2 = require('../../assets/slider/desktop_2.jpg');
 const desktop_3 = require('../../assets/slider/desktop_3.jpg');
+
+const mobile_1 = require('../../assets/slider/mobile_1.jpg');
+const mobile_2 = require('../../assets/slider/mobile_2.jpg');
+const mobile_3 = require('../../assets/slider/mobile_3.jpg');
+
 SwiperCore.use([Autoplay]);
 
 export const Slider = () => {
     return (
         <>
+            <Swiper
+                slidesPerView={1}
+                spaceBetween={30}
+                loop={true}
+                pagination={{
+                    clickable: true
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className={s.swiper_mobile}
+                autoplay={true}
+            >
+                <SwiperSlide><img src={mobile_1} className={s.slide_img} alt="Акция Студентам скидка"/></SwiperSlide>
+                <SwiperSlide><img src={mobile_2} className={s.slide_img} alt='Акция "Счасливые часы"'/></SwiperSlide>
+                <SwiperSlide><img src={mobile_3} className={s.slide_img} alt="Акция Скидка на первый визит"/></SwiperSlide>
+            </Swiper>
+
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}

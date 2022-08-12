@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+}
+.burger {
+    position: absolute;
+    right:5%;
+    margin-top: 28px;
+}
+.logo {
+    margin-top: 10px;
+    width: 110px;
+    margin-left: 20px;
+}
+.icons {
+    width: 48px;
+    margin-left: 10px;
+    margin-top: 25px;
+}
+.downPanel {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 99px;
+    width: 100%;
+    align-items: center;
+}
+.buttons {
+    text-decoration: none;
+    color: white;
+    width:100%;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: black;
+}
+.buttons_ycl {
+    text-decoration: none;
+    color: black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: white;
+}
+.text_button {
+    width: 100%;
+    text-decoration: none;
+}
+.text_button :hover {
+    background-color: white;
+    color:black;
+    border-bottom: 1px solid black;
+}
+/* пока большой */
+@media (min-width: 1091px) {
+    .header {
+        display: none;
+    }
+}

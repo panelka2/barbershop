@@ -1,22 +1,23 @@
-.swiper {
-    width: 100%;
-    height: 100%;
+.text {
+    font-size: 35px;
+    text-align: center;
 }
-.slide_img {
-    width: 100%;
+.desktop_images {
+    width:100%;
 }
-.swiper_mobile {
+.mobile_images {
     width: 100%;
+    margin-bottom: 40px;
 }
 /* пока большой */
 @media (min-width: 701px) {
-    .swiper_mobile {
+    .mobile_images {
         display: none;
     }
 }
 /* стал меньше */
 @media (max-width: 700px) {
-    .swiper {
+    .desktop_images {
         display: none;
     }
 }

@@ -49,3 +49,12 @@
 .link:hover {
     text-decoration: underline black;
 }
+/* стал меньше */
+@media (max-width: 1090px) {
+    .hr_style {
+        width: unset;
+    }
+    .navi_footer {
+        display: none;
+    }
+}

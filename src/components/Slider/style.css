@@ -9,3 +9,13 @@
     color:white;
     left:50px;
 }
+@media (max-width: 1090px) {
+    .swiper-button-next {
+        color:white;
+        right:20px;
+    }
+    .swiper-button-prev {
+        color:white;
+        left:20px;
+    }
+}
